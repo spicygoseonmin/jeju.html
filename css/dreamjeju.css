@@ -1,4 +1,5 @@
 @charset "utd-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -33,10 +34,15 @@ header{
 #logo{
     width: 250px;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     float: left;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Permanent Marker";
+    letter-spacing: 0.05em;
 }
+/* 헤더 메뉴 */
 .menu_wrap{
     width: 950px;
     height: 100%;
@@ -60,6 +66,10 @@ header{
 .menu li a{
     color: white;
 }
+.menu li a small{
+    font-size: 8px;
+}
+
 
 /* 메인1 배경 이미지 */
 #background{
@@ -80,16 +90,29 @@ header{
     height: 100%;
     float: left;
 }
+/* 공지사항 | 갤러리 */
 .main2_notice_1{
     width: 100%;
     height: 53px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #3333331a;
 }
 .navi2 .main2_notice_1 li{
     float: left;
     padding: 15px;
     border: 1px solid rgba(0,0,0,0.1);
+    font-weight: bold;
+    color: #3333338f;
+    cursor: pointer;
 }
+.navi2 .main2_notice_1 li:first-child{
+    background-color: rgba(255, 0, 0, 0.075);
+    color: rgb(148, 5, 5);
+}
+/* .navi2 .main2_notice_1 li:active{
+    background-color: rgba(255, 0, 0, 0.075);
+    color: rgb(148, 5, 5);
+} */
+
 
 /* 공지 사항 내용 */
 .main2_notice_2{
@@ -102,7 +125,9 @@ header{
     font-size: 14px;
     list-style:disc;
 }
-
+.main2_notice_2 li a:hover{
+    color: rgba(15, 80, 221, 0.726);
+}
 
 /* 아이콘 */
 .navi3{
@@ -132,15 +157,20 @@ footer{
     height: 100px;
     border-top: 3px solid #333;
 }
-.footer_wrap{
+.footer{
     width: 50%;
+    height: 100%;
+    float: left;
+}
+.footer_wrap{
+    width: 100%;
     height: 60%;
 }
-.footer_wrap ul li{
+.footer_wrap li{
     float: left;
     padding: 20px 0 10px 15px;
 }
-.footer_wrap ul li a{
+.footer_wrap li a{
     padding: 0 15px 0 0;
     border-right: 1px solid rgba(0, 0, 0, 0.288);
     color: #000000a2;
@@ -149,4 +179,19 @@ footer p{
     padding: 0 0 10px 10px;
     color: rgba(0, 0, 0, 0.397);
     font-size: 14px;
+}
+
+/* sns 아이콘 */
+.icon{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 25px 0;
+}
+.icon ul{
+    float: right;
+}
+.icon ul li {
+    float: left;
+    margin: 5px;
 }
